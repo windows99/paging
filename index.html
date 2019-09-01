@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>paging-project</title>
+    <!-- <link rel="stylesheet" href="https://csdoker.github.io/csdemos/style/base.css"> -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/paging.css">
+    
+</head>
+
+<body>
+
+    <div class="box">
+        <div class="paging-container" id="page-list">
+            <!-- <div id="page-prev">上一页</div>
+                <ul id="page-num-container">
+                    <li class="page-num-item page-show">1</li>
+                    <li class="page-num-item">2</li>
+                    <li class="page-num-item">3</li>
+                    <li class="page-num-item">4</li>
+                </ul>
+                <div id="page-next">下一页</div>
+                <div id="page-skip">
+                    <input type="number" value="1">
+                    <span>/200页</span>
+                </div> -->
+        </div>
+    </div>
+
+    <script src="js/paging.js"></script>
+    <script>
+        new PagingPlugIn('#page-list', {
+            total: 100,
+            showNum: 30,
+            showPage: 5,
+            pageIndex: 2,
+            url: '',
+        });
+        // PagingPlugIn.prototype.renderPaging();
+    </script>
+</body>
+
+</html>
