@@ -23,6 +23,7 @@ git clone https://github.com/windows99/paging.git
 ```
 
 2.引入paging.js、paging.css;（文件中base是重置样式文件，根据项目自行引入）
+
 3.指定一个容器的id，比如
 
 ``` 
